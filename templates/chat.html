@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chat Title</title>
+        <link href="../static/style.css" rel="stylesheet">
+        <link href="../static/bootstrap.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="chatwindow">
+            <h2>Chat Title</h2>
+            <h2>Room: {{session['room']}}</h2>
+            <br>
+            <textarea id="chat" cols="70" rows="10" placeholder="No messages yet..."></textarea>
+            <hr>
+            <br>
+            <input type="text" id="text" size="60" placeholder="Enter your message."/>
+            <button type="button" id="send" class="btn btn-success">SEND</button>
+            <hr>
+            <br>
+            <center><button type="button" class = "btn btn-danger" > Leave Chat</button></center>
+        </div>
+    </body>
+</html>
